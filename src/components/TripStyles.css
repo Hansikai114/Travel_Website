@@ -1,0 +1,67 @@
+
+
+.trip h1 {
+    font-size: 3rem;
+}
+
+.trip {
+    margin: 4rem auto;
+    max-width: 1400px; /* Increased max width to fit larger cards */
+    color: #2a2a2a;
+}
+
+.tripcard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 30px; 
+    margin-top: 3rem;
+}
+
+.t-card {
+    text-align: start;
+    box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.11);
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 1rem;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    width: 100%; 
+}
+
+.t-card:hover {
+    transform: scale(1.05); 
+}
+
+.t-image {
+    height: 250px; 
+    overflow: hidden;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+}
+
+.t-image img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 7px;
+}
+
+.t-image:hover img {
+    transform: scale(1.2); 
+}
+
+.t-card h4 {
+    font-size: 1.5rem; 
+    padding: 1rem 0 0.5rem 0;
+}
+
+@media screen and (max-width: 850px) {
+    .tripcard {
+        grid-template-columns: 1fr; 
+    }
+
+    .t-card {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+}
